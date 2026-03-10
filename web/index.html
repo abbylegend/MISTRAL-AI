@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Studio | AI Music + Video Production</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <strong>Key Studio</strong>
+        <nav class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./features.html">Features</a>
+          <a href="./recon-data.html">Recon Data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <span class="tag">AI Production Platform</span>
+        <h1>From beat retuning to mastered vocal + auto video in one studio</h1>
+        <p>
+          Key Studio reduces studio recording friction by automating frequency adjustments,
+          scene adaptation, multilingual vocal generation, mastering, and video publishing.
+        </p>
+        <div class="cta-group">
+          <a class="btn" href="./features.html">Explore Feature Modules</a>
+          <a class="btn" href="./recon-data.html">View Reconnaissance Data</a>
+          <button class="btn" id="openSceneDashboard" type="button">Open Scene Dashboard</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Interactive Studio Controls (frontend prototype)</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Scene Selector</h3>
+            <p>Active scene: <strong id="activeScene">Cinematic</strong></p>
+            <p class="small">Switch scene profile and update preview-ready settings instantly.</p>
+          </article>
+          <article class="card">
+            <h3>Custom Scene Settings</h3>
+            <label>EQ Intensity <input id="eqIntensity" type="range" min="0" max="100" value="62" /></label>
+            <label>Compression <input id="compression" type="range" min="0" max="100" value="48" /></label>
+            <label>Reverb <input id="reverb" type="range" min="0" max="100" value="36" /></label>
+            <p class="small" id="settingsSummary">EQ 62 · Compression 48 · Reverb 36</p>
+          </article>
+          <article class="card">
+            <h3>Key Seed Generator</h3>
+            <p>Seed: <code id="seedValue">KS-000000</code></p>
+            <button class="btn" id="generateSeed" type="button">Generate New Key Seed</button>
+            <p class="small">Use this seed to keep retakes and generated outputs reproducible.</p>
+          </article>
+          <article class="card">
+            <h3>Fork + Host Ready</h3>
+            <ul>
+              <li>Fork project templates with one click.</li>
+              <li>Host forked outputs on Pages, Vercel, or Netlify.</li>
+              <li>Sync upstream updates with conflict review.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Six Core Studio Areas</h2>
+        <div class="grid">
+          <article class="card"><h3>Create</h3><p>Upload, record, and split stems.</p></article>
+          <article class="card"><h3>Adapt</h3><p>Scene-aware beat frequency tuning + custom scene presets.</p></article>
+          <article class="card"><h3>Vocals</h3><p>Vocal split, auto bass vocal, multilingual generation, retake sync.</p></article>
+          <article class="card"><h3>Master</h3><p>Noise cleanup, blend, and clean mastered output.</p></article>
+          <article class="card"><h3>Video</h3><p>Prompted video generation, captions, and beat-synced edits.</p></article>
+          <article class="card"><h3>Publish</h3><p>Share-ready exports for social, streaming, and broadcast.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="sceneModal" aria-hidden="true">
+      <div class="modal-panel">
+        <h3>Scene Dashboard</h3>
+        <p class="small">Choose a scene profile for instant adaptation.</p>
+        <div class="scene-buttons">
+          <button class="btn scene-btn" data-scene="Cinematic" type="button">Cinematic</button>
+          <button class="btn scene-btn" data-scene="Club" type="button">Club</button>
+          <button class="btn scene-btn" data-scene="Lo-Fi" type="button">Lo-Fi</button>
+          <button class="btn scene-btn" data-scene="Kids" type="button">Kids</button>
+          <button class="btn scene-btn" data-scene="Custom" type="button">Custom</button>
+        </div>
+        <div class="cta-group">
+          <button class="btn" id="closeSceneDashboard" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">Key Studio landing prototype generated from README product spec.</div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

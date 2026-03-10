@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Studio | Reconnaissance Data</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <strong>Key Studio</strong>
+        <nav class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./features.html">Features</a>
+          <a href="./recon-data.html">Recon Data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h1>Product Reconnaissance Data</h1>
+        <p>
+          This page tracks implementation readiness, user value, and dependencies for each
+          Key Studio feature module.
+        </p>
+      </section>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>User Need</th>
+              <th>Data Inputs</th>
+              <th>AI/Processing Requirements</th>
+              <th>Priority</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scene Frequency Adapter</td>
+              <td>Fast tonal adaptation across scenes</td>
+              <td>Audio stems, BPM, key, FFT bands</td>
+              <td>Beat/key detector + dynamic EQ engine</td>
+              <td>P0</td>
+              <td class="status-ok">Defined</td>
+            </tr>
+            <tr>
+              <td>Scene Dashboard</td>
+              <td>Instant preset selection and preview</td>
+              <td>Scene profile metadata</td>
+              <td>Low-latency preview renderer</td>
+              <td>P0</td>
+              <td class="status-ok">Defined</td>
+            </tr>
+            <tr>
+              <td>Vocal Split + Stem Intelligence</td>
+              <td>Separate and repair vocal layers</td>
+              <td>Mixed track + reference stems</td>
+              <td>Source separation model</td>
+              <td>P0</td>
+              <td class="status-ok">Defined</td>
+            </tr>
+            <tr>
+              <td>Multilingual + Retake Sync</td>
+              <td>Localized versions without timing drift</td>
+              <td>Lyrics, phonemes, retake timing</td>
+              <td>Alignment + voice transformation pipeline</td>
+              <td>P1</td>
+              <td class="status-ok">Planned</td>
+            </tr>
+            <tr>
+              <td>Master + Share</td>
+              <td>Clean publish-ready vocal output</td>
+              <td>Vocal/instrument buses, target profile</td>
+              <td>Master chain orchestration</td>
+              <td>P1</td>
+              <td class="status-ok">Planned</td>
+            </tr>
+            <tr>
+              <td>Auto Video + Captions + Kids Mode</td>
+              <td>Fast video packaging for audiences</td>
+              <td>Prompt text, audio timeline, transcript</td>
+              <td>Text-to-video + caption compositor + safe filters</td>
+              <td>P1</td>
+              <td class="status-ok">Planned</td>
+            </tr>
+            <tr>
+              <td>Agent Modding + Key Seeds + Fork Hosting</td>
+              <td>Customizable AI behavior with reproducible outputs</td>
+              <td>Project configs, seed values, template manifests</td>
+              <td>Policy engine + seed manager + fork sync pipeline</td>
+              <td>P1</td>
+              <td class="status-ok">Planned</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Recon data can be expanded with cost, model latency, and QA metrics.</div>
+    </footer>
+  </body>
+</html>
